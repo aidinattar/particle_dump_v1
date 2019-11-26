@@ -1,0 +1,43 @@
+
+----  Leggi il file di testo "particle_events.txt"  ----
+
+Il file contiene una sequenza di eventi e per ciascun evento:
+- un intero per identificare l'evento,
+- le 3 coordinate del punto di decadimento,
+- il numero delle particelle
+- per ogni particella la carica elettrica e le 3 componenti del momento.
+
+***
+Creare un funzione "read" che prende come argomenti:
+- la referenza a un input file stream,
+- la referenza a 3 floats da riempire con le coordinate del punto di decadimento,
+- un array di interi da riempire con le cariche elettriche,
+- 3 array di float da riempire con le componenti del momento
+e che restituisce il numero delle particelle.
+
+***
+Creare una funzione "dump" che prende come argomenti:
+- il numero di eventi,
+- il numero di particelle,
+- 3 float per le coordinate del punto di decadimento,
+- un array di interi contente le cariche elettriche,
+- 3 array di float contenti le componenti del momento angolare
+e stampare un dump sullo schermo.
+Scrivere sullo schermo solo i numeri, non aggiungere nessun testo come "Event number:"
+o "queste sono le particelle:"; l'output dovrebbe essere usare come input per
+un successivo run del programma.
+
+***
+
+Creare una funzione "main" che prende il nome del file dalla 
+stringa di comando, apre il file e chiama le funzioni read e dump.
+Dimensionare gli array nel main, usando 10 come numero massimo di particelle.
+Per ogni evento provare a leggere il numero identificativo dell'evento nel main, 
+e in caso di successo chiamare la funzione "read" per leggere gli alti dati 
+e poi chiamare la funzione "dump".
+
+********* lista finale delle funzioni *********
+
+main                   da fare
+read                   da fare
+dump                   da fare
