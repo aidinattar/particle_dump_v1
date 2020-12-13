@@ -4,14 +4,14 @@
 
 #include<fstream>
 
-int read( std::ifstream& file,
-          float& x, float& y, float& z,
-          int* q,
-          float* Px, float* Py, float* Pz);
+int read(  std::ifstream& file,
+           float& x, float& y, float& z,
+           int* q,
+           float* Px, float* Py, float* Pz );
 void dump( int evNumber, int nParticles,
            float x, float y, float z,
            int q[],
-           float Px[], float Py[], float Pz[]);
+           float Px[], float Py[], float Pz[] );
 
 int main( int argc, char* argv[] ) {
 
@@ -33,7 +33,6 @@ int main( int argc, char* argv[] ) {
                            Px, Py, Pz);
         dump( evNumber, nParticles, x, y, z,
               q, Px, Py, Pz);
-
     }
 
     return 0;
